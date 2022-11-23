@@ -277,7 +277,7 @@ body{
 	flex-wrap: wrap;
 	margin: 40px 0;
 	align-items: center;
-	background-image: url(img/banner/b2.jpg);
+	background-image: url(img/banner/b2.jpg );
 	background-repeat: no-repeat;
 	background-position: 20% 30%;
 	background-color: white;
@@ -502,6 +502,201 @@ footer .copyright{
 	line-height: 25px;
 }
 
+#page-header.blog-header {
+	background-image: url(img/banner/b19.jpg);
+}
+
+#blog {
+	padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	padding-bottom: 90px;
+}
+
+#blog .blog-img {
+	width: 50%;
+	margin-right: 40px;
+}
+
+#blog img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+#blog .blog-details {
+	width: 50%;
+}
+
+#blog .blog-details a {
+	text-decoration: none;
+	font-size: 11px;
+	color: #000;
+	font-weight: 700;
+	position: relative;
+	transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+	content: '';
+	width: 50px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 4px;
+	right: -60px;
+}
+
+#blog .blog-details a:hover {
+	color: #fc6a2d;
+}
+
+#blog .blog-details a:hover::after {
+	background-color: #fc6a2d;
+}
+
+#blog .blog-box h1 {
+	position: absolute;
+	top: 40px;
+	left: 700;
+	color: #fc6a2d;
+	z-index: -9;
+}
+
+#page-header.about-header {
+	background-image: url(img/about/banner.png);
+}
+
+#about-head {
+	display: flex;
+	align-items: center;
+}
+
+#about-head img {
+	width: 50%;
+	height: auto;
+}
+
+#about-head div {
+	padding-left: 40px;
+}
+
+#contact-details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#contact-details .details {
+	width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+	font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+	font-size: 26px;
+	line-height: 35px;
+	padding: 20px 0;
+}
+
+#contact-details .details h3 {
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+
+#contact-details .details li {
+	list-style: none;
+	display: flex;
+	padding: 10px 0;
+}
+
+#contact-details .details i {
+	font-size: 14px;
+	padding: 22px;
+}
+
+#contact-details .details li p {
+	margin: 0;
+	font-size: 14px;
+}
+
+#contact-details .map {
+	width: 55%;
+	height: 400px;
+}
+
+#contact-details .map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#form-details form {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#form-details {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px;
+	padding: 80px;
+	border: 1px solid #e1e1e1;
+}
+
+#form-details form input,
+#form-details form textarea {
+	width: 100%;
+	padding: 12px 15px;
+	outline: none;
+	margin-bottom: 20px;
+	border-bottom: 20px;
+	border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+	background-color: #fc6a2d;
+	color: #fff;
+}
+
+#form-details .people div {
+	padding-bottom: 25px;
+	display: flex;
+	align-items: flex-start;
+}
+
+#form-details .people div img {
+	width: 65px;
+	height: 65px;
+	object-fit: cover;
+	margin-right: 15px;
+}
+
+#form-details .people div p {
+	margin: 0;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+#form-details .people div p span {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+}
+
+
+
 /* Start Media Query */
 
 @media (max-width:799px) {
@@ -575,6 +770,14 @@ footer .copyright{
     #newsletter .form {
        width: 70%;
     }
+
+	#form-details {
+		padding: 40px;
+	}
+
+	#form-details form {
+		width: 50%;
+	}
 }
 
 
@@ -619,5 +822,76 @@ footer .copyright{
 
 	footer .copyright{
     	text-align: start;
+	}
+
+    #prodetails {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#prodetails .single-pro-image {
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	#prodetails .single-pro-details {
+		width: 100%;
+	}
+
+	#blog {
+		padding: 100px 20px 0 20px;
+	}
+
+	#blog .blog-box {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#blog .blog-img {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+
+	#blog .blog-details {
+		width: 100%;
+	}
+
+    #about-head {
+		flex-direction: column;
+	}
+
+	#about-head img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#about-head div {
+		padding-left: 0px;
+	}
+
+	#contact-details {
+		flex-direction: column;
+	}
+
+	#contact-details .details {
+        width: 100%;
+		margin-bottom: 30px;
+	}
+
+	#contact-details .map {
+		width: 100%;
+	}
+
+	.form-details{
+		margin: 10px;
+		padding: 30px 10px;
+		flex-wrap: wrap;
+	}
+
+	.form-details form {
+		width: 100%;
+		margin-bottom: 30px;
 	}
 }
